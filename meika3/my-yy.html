@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的预约</title>
+    <script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="ui-header ui-header-positive">
+    <i class="icon iconfont icon-back" onclick="history.back()"></i>
+    <h1>我的预约</h1>
+</header>
+
+
+<section class="ui-container">
+	<div class="ui-grid ui-whitespace">
+	        <div class="ui-row-flex my-yuyue-top ">
+	            <div class="ui-col ui-col-4">
+				<span>预约时间：2016年11月24日 13:30</span>
+	            </div>
+	            <div class="ui-col ui-col-1" style="text-align: right;" data-href="index.html">
+				<span>后天</span>
+	            </div>
+	        </div>
+	        
+	        <div class="ui-row-flex my-yuyue-main">
+	            <div class="ui-col">
+	            	<div class="ui-avatar-md" style="float: left; margin-right: 12px;">
+					    <span style="background-image:url(img/head1.png)"></span>
+					</div>
+					 <div>
+	            		<div>预约对象：<span class="ui-txt-default"><em class="ui-txt-fs">莉莉</em> 001  高级设计师</span></div>
+	            		<div>预约项目：<span class="ui-txt-default">总监造型师洗剪吹</span></div>
+	            		<div>预约门店：<span class="ui-txt-default">尚艺美业连锁</span></div>
+	            	</div>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="ui-row-flex my-yuyue-bottom">
+	            <div class="ui-col left">
+	            	<i class="icon iconfont icon-wrong"></i>
+				<span>取消预约</span>
+	            </div>
+	            <div class="ui-col right" data-href="yuyueing.html">
+	            	<i class="icon iconfont icon-smile"></i>
+				<span>联系我们</span>
+	            </div>
+	        </div>
+	    </div>
+	    
+
+	    
+
+
+	<div class="ui-grid ui-whitespace" id="myyuyue">
+	        <div class="ui-row-flex my-yuyue-top disabled">
+	            <div class="ui-col ui-col-4">
+				<span>预约时间：2016年11月24日 13:30</span>
+	            </div>
+	            <div class="ui-col ui-col-1" style="text-align: right;" data-href="index.html">
+				<span><i class="icon iconfont icon-delete"></i></span>
+	            </div>
+	        </div>
+	        
+	        <div class="ui-row-flex my-yuyue-main">
+	            <div class="ui-col">
+	            	<div class="ui-avatar-md" style="float: left; margin-right: 12px;">
+					    <span style="background-image:url(img/head2.png)"></span>
+					</div>
+					 <div>
+	            		<div>预约对象：<span class="ui-txt-default"><em class="ui-txt-fs">莉莉</em> 001  高级设计师</span></div>
+	            		<div>预约项目：<span class="ui-txt-default">总监造型师洗剪吹</span></div>
+	            		<div>预约门店：<span class="ui-txt-default">尚艺美业连锁</span></div>
+	            	</div>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="ui-row-flex my-yuyue-bottom">
+	            <div class="ui-col left guoqi">
+	            	<i class="icon iconfont icon-information"></i>
+				<span>已经过期</span>
+	            </div>
+	            <div class="ui-col right disabled" data-href="yuyueing.html">
+	            	<i class="icon iconfont icon-smile"></i>
+				<span>联系我们</span>
+	            </div>
+	        </div>
+	    </div>
+</section>
+
+
+
+
+
+
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有信息哦！</p>
+	    <!--<div class="ui-notice-btn">
+	        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+	    </div>-->
+	</section>
+</section>
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li,.ui-col').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

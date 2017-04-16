@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>分享记录</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="ui-header ui-header-positive">
+            <i class="icon iconfont icon-back" onclick="history.back()"></i>
+            <h1>分享记录</h1>
+</header>
+
+
+<style>
+.ui-col{ line-height: 40px;}	
+</style>
+
+<section id="tab" class="ui-container">
+	<div class="ui-tab">
+	    <ul class="ui-tab-nav ui-border-b">
+	        <li class="current">全部</li>
+	        <li>已领取</li>
+	        <li>已消费</li>
+	    </ul>
+
+		<ul class="ui-tab-content" style="width:300%;">
+	        <li class="ui-whitespace p-top">
+	        	<div class="ui-whitespace ui-bg-white" style="border-radius: 6px;">
+	            <div class="ui-row-flex ui-border-b" style="font-size: 12px; color: #BBBBBB;">
+	                <div class="ui-col ui-col-3">分享日期</div>
+	                <div class="ui-col ui-col-1">方式</div>
+	              	<div class="ui-col ui-col-1" style="text-align: right;">消费状态</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-fs" style="text-align: right;">已领取</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1" style="text-align: right;">未领取</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-fs" style="text-align: right;">已领取</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-highlight" style="text-align: right;">已消费</div>
+	            </div>
+	            <div class="ui-row-flex">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-highlight" style="text-align: right;">已消费</div>
+	            </div>
+				</div>
+   
+   
+   			</li>
+	        <li class="ui-whitespace p-top">
+	        	<div class="ui-whitespace ui-bg-white" style="border-radius: 6px;">
+	            <div class="ui-row-flex ui-border-b" style="font-size: 12px; color: #BBBBBB;">
+	                <div class="ui-col ui-col-3">分享日期</div>
+	                <div class="ui-col ui-col-1">方式</div>
+	              	<div class="ui-col ui-col-1" style="text-align: right;">消费状态</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-fs" style="text-align: right;">已领取</div>
+	            </div>
+	            
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-fs" style="text-align: right;">已领取</div>
+	            </div>
+				</div>
+	        	
+	        	
+	        </li>
+	        <li class="ui-whitespace p-top">
+	        	<div class="ui-whitespace ui-bg-white" style="border-radius: 6px;">
+	            <div class="ui-row-flex ui-border-b" style="font-size: 12px; color: #BBBBBB;">
+	                <div class="ui-col ui-col-3">分享日期</div>
+	                <div class="ui-col ui-col-1">方式</div>
+	              	<div class="ui-col ui-col-1" style="text-align: right;">消费状态</div>
+	            </div>
+	           
+	            <div class="ui-row-flex ui-border-b">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-highlight" style="text-align: right;">已消费</div>
+	            </div>
+	            <div class="ui-row-flex">
+	                <div class="ui-col ui-col-3">2016-11-24 14:00</div>
+	                <div class="ui-col ui-col-1">微信</div>
+	              	<div class="ui-col ui-col-1 ui-txt-highlight" style="text-align: right;">已消费</div>
+	            </div>
+				</div>
+	        </li>
+	    </ul>
+
+	</div>
+		<script>
+		(function (){
+            var tab = new fz.Scroll('.ui-tab', {
+		        role: 'tab',
+		        autoplay: false,
+		        interval: 3000
+		    });
+		    /* 滑动开始前 */
+		    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+		        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+		    })
+		})();
+       </script>
+</section>
+
+
+
+
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有信息哦！</p>
+	    <!--<div class="ui-notice-btn">
+	        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+	    </div>-->
+	</section>
+</section>
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li,.ui-grid-halve li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

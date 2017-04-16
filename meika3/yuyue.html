@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>预约</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+
+<header class="ui-border-b">
+    <ul class="ui-tab-nav">
+        <li style="text-align: left; padding-left: 12px;">
+        	<i class="icon iconfont icon-dian1" ></i> 尚艺美业连锁一店</li>
+        <li style="width:100px; min-width:100px; color: #EB6AB1;">选择店面 <i class="icon iconfont icon-triangledownfill" style="font-size: 12px; margin-left: 3px;"></i></li>
+    </ul>
+</header>
+
+<!--底部悬浮导航-->
+<footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled ui-border-t">
+		<li class="active" data-href="yuyue.html">
+			<i class="icon iconfont icon-yuyue-fuben"></i>
+			<div>预约</div>
+		</li>
+		<li data-href="zuopin.html">
+			<i class="icon iconfont icon-zuopin1"></i>
+			<div>作品</div>
+		</li>
+		<li class="active" data-href="index.html">
+			<div class="ui-avatar-logo" style="border: 1px solid #AAAAAA;">
+            <span style="background-image:url(img/shoplogo.png)"></span>
+	    	</div>
+		</li>
+		<li data-href="shop.html">
+			<i class="icon iconfont icon-shangcheng"></i>
+			<div>商城</div>
+		</li>
+		<li data-href="my.html">
+			<i class="icon iconfont icon-wode1"></i>
+			<div>我的</div>
+		</li>
+    </ul>
+</footer>
+
+
+
+<section class="ui-container">
+	<div class="ui-whitespace">
+		<div class="ui-grid">
+	        <div class="ui-row-flex yuyue-top">
+	            <div class="ui-col ui-col-3">
+	            	<div class="ui-avatar-md ui-border">
+					    <span style="background-image:url(img/head1.png)"></span>
+					</div>
+					 <div style="float: left;">
+	            		<h4 class="ui-txt-default">谢小帅</h4>
+	            		<div>910</div>
+	            		<div>高级设计师</div>
+	            	</div>
+	            </div>
+	            <div class="ui-col ui-col-2">
+	            	<div>
+		        		预约数：1210</div>
+					<div>
+		        		好评率：100%</div>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="ui-row-flex yuyue-bottom">
+	            <div class="ui-col ui-col-3">
+	            	<i class="icon iconfont icon-trade"></i>
+				<span>服务价：￥3122</span>
+	            </div>
+	            <div class="ui-col ui-col-2" data-href="yuyueing.html">
+	            	<i class="icon iconfont icon-yuyue1"></i>
+				<span>预约</span>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    
+	    
+	    
+		<div class="ui-grid">
+	        <div class="ui-row-flex yuyue-top">
+	            <div class="ui-col ui-col-3">
+	            	<div class="ui-avatar-md ui-border">
+					    <span style="background-image:url(img/head2.png)"></span>
+					</div>
+					 <div style="float: left;">
+	            		<h4 class="ui-txt-default">阿信</h4>
+	            		<div>8</div>
+	            		<div>总监设计师</div>
+	            	</div>
+	            </div>
+	            <div class="ui-col ui-col-2">
+	            	<div>
+		        		预约数：855</div>
+					<div>
+		        		好评率：98%</div>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="ui-row-flex yuyue-bottom">
+	            <div class="ui-col ui-col-3">
+	            	<i class="icon iconfont icon-trade"></i>
+				<span>服务价：￥3122</span>
+	            </div>
+	            <div class="ui-col ui-col-2" data-href="yuyueing.html">
+	            	<i class="icon iconfont icon-yuyue1"></i>
+				<span>预约</span>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    
+	    		<div class="ui-grid">
+	        <div class="ui-row-flex yuyue-top">
+	            <div class="ui-col ui-col-3">
+	            	<div class="ui-avatar-md ui-border">
+					    <span style="background-image:url(img/head3.png)"></span>
+					</div>
+					 <div style="float: left;">
+	            		<h4 class="ui-txt-default">ANDY</h4>
+	            		<div>12</div>
+	            		<div>高级设计师</div>
+	            	</div>
+	            </div>
+	            <div class="ui-col ui-col-2">
+	            	<div>
+		        		预约数：1880</div>
+					<div>
+		        		好评率：89%</div>
+	            </div>
+	        </div>
+	        
+	        
+	        <div class="ui-row-flex yuyue-bottom">
+	            <div class="ui-col ui-col-3">
+	            	<i class="icon iconfont icon-trade"></i>
+				<span>服务价：￥3122</span>
+	            </div>
+	            <div class="ui-col ui-col-2" data-href="yuyueing.html">
+	            	<i class="icon iconfont icon-yuyue1"></i>
+				<span>预约</span>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    
+	    
+	    
+
+    </div>
+</section>
+
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有员工可以预约哦！</p>
+	    <!--<div class="ui-notice-btn">
+	        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+	    </div>-->
+	</section>
+</section>
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li,.ui-col').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+
+</body>
+</html>

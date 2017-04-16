@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>关于美咖</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="ui-header ui-header-positive">
+            <i class="icon iconfont icon-back" onclick="history.back()"></i>
+            <h1>关于美咖</h1>
+</header>
+
+<!--底部悬浮导航-->
+<footer class="ui-footer ui-footer-btn btn-b">
+    <ul class="ui-tiled ui-border-t">
+		<li data-href="4000770829">
+			<i class="icon iconfont icon-map"></i>
+			<span>查看地图</span>
+		</li>
+		<li data-href="payment.html" class="ui-txt-white" style="background:#DE4D96;">
+			<i class="icon iconfont icon-phone"></i>
+			<span>联系我们</span>
+		</li>
+    </ul>
+</footer>
+
+
+
+<section class="ui-container" id="slider">
+            <div class="ui-slider" style="padding-top:55%">
+                <ul class="ui-slider-content" style="width: 100%">
+                    <li><span style="background-image:url(img/gysjjt.jpg)"></span></li>
+                </ul>
+            </div>
+
+
+            <div class="ui-whitespace ui-bg-white">
+            	
+            <h4 style="color: #666; line-height: 24px; padding: 12px 0 6px;">深圳市共赢世纪文化科技有限公司</h4>
+                <p>
+                	<a href="4000770829" class="ui-txt-liangfs"><i class="icon iconfont icon-phone"></i> 服务电话：400-077-0829</a>
+                	<br/>
+                   <a href="4000770829" class="ui-txt-liangfs"><i class="icon iconfont icon-map"></i> 商家地址：深圳市宝安中心区华丰华源科技创新园A座631</a>
+                </p>
+                	
+              
+              <div class="ui-border-t" style="margin-top:16px;padding:8px 0px 20px; border-color: #EEEEEE;">
+              <p class="ui-txt-default ui-txt-justify">
+                	深圳市共赢世纪文化科技有限公司致力于服务于美业，全力打造全球最好的美业云服务平台。
+                	<br />
+                	<br />
+
+公司旗下品牌有共赢美业系统、“美咖”APP。共赢世纪通过移动互联网技术提升美业服务品质，为客户创造最高价值。共赢世纪以“共创未来、赢得世纪”为指导理念，整合了上千位行业老板、行业名人、管理名师，并做专题分享和大型活动已超过100场，得到了广大媒体的大力支持和报道，已成为中国美业最权威的平台。
+<br /><br />
+“共赢美业系统”主要通过技术(Technology)、服务(Sevice)两方面来实现，是共赢世纪通过互联网创新发展模式的核心产品。店面不需技术人员、不用购买服务器、更不需要多花一分钱，便可以随时随地进行管理。通过这一创新产品，解决了美业店面数据安全、连锁管理的巨大问题，极大方便美业老板的动态管理，完全摆脱了传统手记的繁琐，迎合了时代发展的潮流。同时，“共赢美业系统”还拥有消费收银、会员管理、薪资统计、商品管理、报表分析、短信群发等功能模块。成为了中国美业每一家店面的智能管理解决方案提供商，已被誉为美业管理系统界的领军品牌。自推出以来，以构筑企业服务管理体系为架构，以高端技术为核心，已经获得国家版权局计算机软件著作权登记证书。得到市场的高度认同，被誉为 “美业店面管理专家”。
+<br /><br />
+“美咖”APP与共赢美业系统的结合，更是开辟了中国美业移动互联网时代的新模式。美业商家可以在线推广项目、产品进行拓客，并服务客户。同时，顾客也可在线预约、消费查询、分享互动等。对美业店面管理和拓展终端客户拥有无可比拟的价值。
+<br /><br />
+共赢世纪打造全球（美业）最大的、模式超前的、服务一流的美业云服务平台，为美业店面的良好发展奠定坚实的基础。将高端的经营智慧、管理思想和服务模式传播给美业，帮助美业店面持续经营和客户服务品质提升，最终推动中国美业走向正规化、持续化、国际化。
+<br /><br />
+              </p>
+              </div>
+            </div>
+</section>
+
+
+
+
+
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

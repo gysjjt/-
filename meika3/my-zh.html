@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的账户</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+	
+<header class="ui-header ui-header-positive">
+            <i class="icon iconfont icon-back" onclick="history.back()"></i>
+            <h1>我的账户</h1>
+</header>
+
+<section class="ui-container">
+	<div style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #280F63), to(#660C62));line-height:35px;text-align: center; padding:24px 16px 0px;height: 150px">
+		<div style="background: url(img/cardbg.png) no-repeat; background-size: 100%; color: #6E4400; height: 140px; padding:5px 12px; margin: auto; border-radius: 20px 20px 0px 0px;">
+			<div style="font-size: 10px;text-align: left;">2014-10-12</div>
+			<div style="font-size: 16px;">尊享VIP卡</div>
+			<div style="font-size: 30px; font-weight: normal;">8.8折</div></div>
+	</div>
+
+
+
+
+
+<style>
+	.iconfont{font-size: 22px;line-height: 30px;}
+	.ui-list-thumb{margin: -40px 10px 0px 10px; width:60px; height:60px;}
+</style>
+
+	<ul class="ui-list ui-list-text">
+	    <li style="padding-bottom: 6%;">
+	    	<div class="ui-list-thumb">
+			 <div class="ui-avatar-md">
+		        <span style="background-image:url(img/head1.png)"></span>
+		    </div>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>刘德华</h5>
+			</div>
+			<div class="ui-list-action">NO.8000122</div>
+	 	</li>
+	</ul>
+
+	<ul class="ui-list ui-list-text">
+	    <li class="ui-border-b">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-crad"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>卡金余额</h5>
+			</div>
+			<div class="ui-list-action ui-txt-fs">￥19899</div>
+	 	</li>
+	    <li class="ui-border-b">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-zsj"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>赠送金余额</h5>
+			</div>
+			<div class="ui-list-action">￥19899</div>
+	 	</li>
+	    <li class="ui-border-b">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-zsj"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>欠款</h5>
+			</div>
+			<div class="ui-list-action">￥299</div>
+	 	</li>
+	 <li class="ui-border-b">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-jifeng"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>积分</h5>
+			</div>
+			<div class="ui-list-action">￥299</div>
+	 	</li>
+	 	<li class="ui-border-b" data-href="my-djj.html">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-daijingjuan"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>代金券</h5>
+			</div>
+			<div class="ui-list-action">20元(2张)
+				<i class="icon iconfont icon-more" style="font-size: 14px;"></i>
+			</div>
+	 	</li>
+	 	<li class="" data-href="my-tc.html">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-crad"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>套餐</h5>
+			</div>
+			<div class="ui-list-action">2个
+				<i class="icon iconfont icon-more" style="font-size: 14px;"></i>
+			</div>
+	 	</li>
+	
+	</ul>
+	
+</section>
+
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

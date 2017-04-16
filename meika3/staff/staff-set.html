@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>美咖员工版</title>
+    <script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+    </script>
+<link href="../css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="../icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="../js/zepto.min.js"></script>
+<script src="../js/frozen.js"></script>
+</head>
+    
+<body ontouchstart>
+<!--底部悬浮导航-->
+<footer class="ui-footer ui-footer-btn">
+    <ul class="ui-tiled ui-border-t">
+
+		<li data-href="staff-bonus.html">
+			<i class="icon iconfont icon-yeji"></i>
+			<div>业绩</div>
+		</li>
+		<li data-href="staff-yuyue.html">
+			<i class="icon iconfont icon-yuyue1"></i>
+			<div>预约</div>
+		</li>
+		<li data-href="staff-bonus.html">
+			<div class="ui-avatar-logo" style="border: 1px solid #AAAAAA;">
+            <span style="background-image:url(img/shoplogo.png)"></span>
+	    	</div>
+		</li>
+		<li data-href="staff-month.html">
+			<i class="icon iconfont icon-gongzi"></i>
+			<div>工资</div>
+		</li>
+		<li class="active" data-href="staff-set.html">
+			<i class="icon iconfont icon-wode-fuben"></i>
+			<div>设置</div>
+		</li>
+    </ul>
+</footer>
+
+        
+        
+<section id="avatar">
+	<div style="background: url(../img/mybg.png) no-repeat; background-size: 100%; line-height:35px;text-align: center; padding:10% 0px 6%;">
+	    <div class="ui-avatar-lg ui-border" style="width: 70px; height: 70px;">
+            <span style="background-image:url(img/head1.png)"></span>
+	    </div>
+		<a href="login.html" style=" color: #fff;">李伟</a>
+	</div>
+</section>
+
+<section class="ui-container">
+    <ul class="ui-list ui-list-function">
+        <li>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap">001 助理</h4>
+            </div>
+            <!--<div class="ui-btn ui-btn-s ui-btn-send">删除</div>-->
+        </li>
+    </ul>
+	<div class="ui-whitespace" style="margin-top:70%;">
+		<button class="ui-btn-lg">退出账号</button>
+	</div>
+</section> 
+
+ <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'staff-login.html';
+        });
+        </script>
+ <!-- /.ui-container-->
+</html>

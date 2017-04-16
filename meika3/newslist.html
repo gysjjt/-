@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>公告</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section id="tab">
+	
+	
+<div class="ui-tab">
+
+<header class="ui-header ui-header-positive">
+            <i class="icon iconfont icon-back" onclick="history.back()"></i>
+	    <ul class="ui-tab-nav info-nav">
+	        <li class="current" style="border-radius:50px 0px 0px 50px;">通知</li>
+	        <li style="border-radius:0px 50px 50px 0px;">提醒</li>
+	    </ul>
+</header>
+
+
+		<ul class="ui-tab-content ui-container" style="width:200%;">
+	        <li>
+	        	<div class="ui-whitespace ui-bg-white" style="border-radius: 6px; padding: 14px; margin: 12px;">
+	        	<h4 class="ui-nowrap" style="line-height: 30px;">美妆品牌M.A.C重新发力香水市场 灵感来自灵感来自灵感来自灵感来自口红</h4>
+	        	<div class="ui-placehold-img" style="margin: 12px 0px;"><span style="background-image: url(img/3.png);"></span></div>
+	            <div class="ui-txt-justify" style="padding-bottom: 8px;">
+	                近期，雅诗兰黛旗下美妆品牌M.A.C推出了一款名为Shadescents的香水系列，这几款香水的灵感分别来自其6支经典口红。这几款香水的灵感分别来自其6支经典口红。
+	            </div>
+				</div>
+				<div class="ui-whitespace ui-bg-white" style="border-radius: 6px; padding: 14px; margin: 12px;">
+	        	<h4 class="ui-nowrap" style="line-height: 30px;">美妆品牌M.A.C重新发力香水市场 灵感来自灵感来自灵感来自灵感来自口红</h4>
+	        	<div class="ui-placehold-img" style="margin: 12px 0px;"><span style="background-image: url(img/1.png);"></span></div>
+	            <div class="ui-txt-justify" style="padding-bottom: 8px;">
+	                近期，雅诗兰黛旗下美妆品牌M.A.C推出了一款名为Shadescents的香水系列，这几款香水的灵感分别来自其6支经典口红。这几款香水的灵感分别来自其6支经典口红。
+	            </div>
+				</div>
+				
+   			</li>
+   			
+   			
+   			
+	        <li>
+	        	
+				<div class="ui-whitespace ui-bg-white" style="border-radius: 6px; padding: 14px; margin: 12px;">
+	        	<h4 class="ui-nowrap" style="line-height: 30px;">美妆品牌M.A.C重新发力香水市场 灵感来自灵感来自灵感来自灵感来自口红</h4>
+	            <div class="ui-txt-justify" style="padding-bottom: 8px;">
+	                	这几款香水的灵感分别来自其6支经典口红。
+	            </div>
+				</div>
+
+
+	        	<div class="ui-whitespace ui-bg-white" style="border-radius: 6px; padding: 14px; margin: 12px;">
+	        	<h4 class="ui-nowrap" style="line-height: 30px;">美妆品牌M.A.C重新发力香水市场 灵感来自灵感来自灵感来自灵感来自口红</h4>
+	            <div class="ui-txt-justify" style="padding-bottom: 8px;">
+	                	这几款香水的灵感分别来自其6支经典口红。
+	            </div>
+				</div>
+	        
+	        
+	     	   <div class="ui-whitespace ui-bg-white" style="border-radius: 6px; padding: 14px; margin: 12px;">
+	        	<h4 class="ui-nowrap" style="line-height: 30px;">美妆品牌M.A.C重新发力香水市场 灵感来自灵感来自灵感来自灵感来自口红</h4>
+	            <div class="ui-txt-justify" style="padding-bottom: 8px;">
+	                	这几款香水的灵感分别来自其6支经典口红。
+	            </div>
+				</div>
+	        </li>
+	    </ul>
+
+	</div>
+		<script>
+		(function (){
+            var tab = new fz.Scroll('.ui-tab', {
+		        role: 'tab',
+		        autoplay: false,
+		        interval: 3000
+		    });
+		    /* 滑动开始前 */
+		    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+		        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+		    })
+		})();
+       </script>
+</section>
+
+
+
+
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有信息哦！</p>
+	    <!--<div class="ui-notice-btn">
+	        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+	    </div>-->
+	</section>
+</section>
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li,.ui-grid-halve li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

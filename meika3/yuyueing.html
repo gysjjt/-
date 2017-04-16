@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>预约</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+
+
+<header class="ui-header ui-header-positive">
+    <i class="icon iconfont icon-back" onclick="history.back()"></i>
+    <h1>预约</h1>
+</header>
+
+<!--底部悬浮导航-->
+<footer class="ui-footer ui-footer-btn btn-b">
+    <ul class="ui-tiled ui-border-t">
+		<li class="ui-txt-fs" style="width: auto;">
+			<i class="icon iconfont icon-renwuguanli"></i>
+			<span>已选：今天（周五）19:30</span>
+		</li>
+		<li data-href="yuyue-step2.html" class="ui-txt-white" style="background:#DE4D96;width: auto;">
+			<i class="icon iconfont icon-skip"></i>
+			<span>下一步</span>
+		</li>
+    </ul>
+</footer>
+
+<section class="ui-container">
+	<div class="yuyue-box">
+		 <ul class="ui-list ui-border-b" style="background: none;">
+		    <li>
+		        <div class="ui-avatar-s">
+		            <span style="background-image:url(img/head1.png)" class="ui-border"></span>
+		        </div>
+		        <div class="ui-list-info">
+		            <h4 class="ui-nowrap" style="font-size: 14px;" >阿亮
+		            	<span style="font-size: 12px; color:#999;">001&nbsp;高级设计师</span> 
+			            <span class="ui-txt-fs" style="font-size: 12px; float: right; line-height: 22px;">
+			            	价格：￥3122
+			            </span>
+		            </h4>
+		        </div>
+		    </li>
+		</ul>
+
+
+	<div class="riqi">
+		<table class="ui-table" style="width: 100%;">
+			<tr>
+			<th>
+			今天
+			</th>
+			<th>
+			明天
+			</th>
+			<th>
+			后天
+			</th>
+			<th>
+			11.07
+			</th>
+			<th>
+			11.08
+			</th>
+			<th>
+			11.09
+			</th>
+			<th>
+			11.10
+			</th>
+			</tr>
+			<tr class="ui-border-t ui-border-b">
+				<td class="ui-txt-fs">
+					周五
+				</td>
+				<td>
+					周六
+				</td>
+				<td>
+					周日
+				</td>
+				<td>
+					周一
+				</td>
+				<td>
+					周二
+				</td>
+				<td>
+					周三
+				</td>
+				<td>
+					周四
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+<div class="ui-whitespace">
+	<p style="line-height: 40px; text-align: center;">上午</p>
+	            <div class="ui-row-flex time">
+	                <div class="ui-col disabled">10:30</div>
+	                <div class="ui-col disabled">11:00</div>
+	                <div class="ui-col disabled">11:30</div>
+	                <div class="ui-col disabled">12:00</div>
+	                <div class="ui-col disabled">12:30</div>
+	            </div>
+	
+	
+	<p style="line-height: 40px; text-align: center;">下午</p>
+	            <div class="ui-row-flex time">
+	                <div class="ui-col">13:00</div>
+	                <div class="ui-col">13:30</div>
+	                <div class="ui-col">14:00</div>
+	                <div class="ui-col">14:30</div>
+	                <div class="ui-col">15:00</div>
+	            </div>
+	            <div class="ui-row-flex time">
+	                <div class="ui-col">15:30</div>
+	                <div class="ui-col ui-btn-danger">16:00</div>
+	                <div class="ui-col">已预约</div>
+	                <div class="ui-col">17:00</div>
+	                <div class="ui-col">17:30</div>
+	            </div>
+	
+	
+	<p style="line-height: 40px; text-align: center;">晚上</p>
+	            <div class="ui-row-flex time">
+	                <div class="ui-col">18:00</div>
+	                <div class="ui-col">18:30</div>
+	                <div class="ui-col">19:00</div>
+	                <div class="ui-col">19:30</div>
+	                <div class="ui-col">20:00</div>
+	            </div>
+	            <div class="ui-row-flex time">
+	                <div class="ui-col">20:30</div>
+	                <div class="ui-col">21:00</div>
+	                <div class="ui-col">21:30</div>
+	                <div class="ui-col">22:00</div>
+	                <div class="ui-col">22:30</div>
+	            </div>
+</div>
+</section>
+
+
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>

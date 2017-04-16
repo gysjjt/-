@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>应用设置</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+	
+<header class="ui-header ui-header-positive">
+            <i class="icon iconfont icon-back" onclick="history.back()"></i>
+            <h1>应用设置</h1>
+</header>
+
+
+<style>
+	.iconfont{line-height: 32px;}
+</style>
+
+
+
+<section class="ui-container ui-bg-white" id="avatar">
+	<div style="text-align: center; padding:12% 0px 6%;">
+	    <div class="ui-avatar-lg ui-border" style="border-radius: 12px; width: 70px; height:70px; margin-bottom: 6px;">
+            <span style="background-image:url(img/LOGO.png)"></span>
+	    </div>
+		<a href="login.html">美咖-您的VIP会员助手</a>
+	</div>
+</section>
+
+
+
+<section class="ui-border-t" id="list">
+	<ul class="ui-list ui-list-text">		
+	 	<li class="ui-border-b" data-href="feedback.html">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-help"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>意见反馈</h5>
+			</div>
+			<div class="ui-list-action">
+				<i class="icon iconfont icon-more" style="font-size: 14px;"></i>
+			</div>
+	 	</li>
+	 	
+	 	
+	 	<li class="" data-href="about-meika.html">
+	    	<div class="ui-list-thumb-s">
+	           <i class="icon iconfont icon-smile"></i>
+	        </div>
+			<div class="ui-list-info">
+			    <h5>关于我们</h5>
+			</div>
+			<div class="ui-list-action">
+				<i class="icon iconfont icon-more" style="font-size: 14px;"></i>
+			</div>
+	 	</li>
+	</ul>
+</section>
+
+
+            <div class="ui-btn-wrap" style="padding:50% 15px 0px;">
+                <button class="ui-btn-lg" style="height: 40px; margin-bottom:16px; font-size: 16px;">
+                    退出
+                </button>
+            </div>
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+
+
+</body>
+</html>
