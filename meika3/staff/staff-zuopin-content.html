@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的作品秀</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="../css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="../icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="../js/zepto.min.js"></script>
+<script src="../js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section id="slider">
+            <div class="ui-slider ui-slider-h100">
+            	<i class="icon iconfont icon-back back-bg" onclick="history.back()"></i>
+                <ul class="ui-slider-content" style="width: 200%">
+                    <li><span style="background-image:url(../img/z1.png)"></span></li>
+                    <li><span style="background-image:url(../img/z2.png)"></span></li>
+  
+                </ul>
+            </div>
+
+       	<script>
+        (function (){
+            var slider = new fz.Scroll('.ui-slider', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 4000
+            });
+
+            slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                console.log(fromIndex,toIndex)
+            });
+
+            slider.on('scrollEnd', function(cruPage) {
+                console.log(cruPage)
+            });
+        })();
+        </script>
+</section>
+
+<section class="ui-container" id="layout">
+    <div class="ui-bg-white">
+    	<div class="ui-grid">
+			<ul class="ui-row">
+            <li class="ui-col ui-col-20">
+            	<div class="ui-avatar">
+				    <span style="background-image:url(../img/head2.png)"></span>									    
+				</div>
+				<p class="ui-txt-muted" style="line-height: 30px; text-align: center; font-size: 12px;">11-12</p>
+            </li>
+            <li class="ui-col ui-col-80" style="padding-right: 12px;">
+            	<h4 style="padding-left: 0px;">谢小帅　01　 高级设计师</h4>				                
+            	<h6 class="ui-label" style="margin: 4px 0px;">参考价：￥99999.00</h6>
+            	<p class="ui-txt-justify" style="padding-top: 6px; padding-bottom: 6px;">
+            		纹理烫短发发型，看着纹路清晰，给人一种凌乱的随意感觉。脖子那里的短发稍微有点弧度，减少了一些呆板的味道。这款小脸短发发型看着比较清爽且时尚，很多女性应该会喜欢的。短发发型后面的图片 烫发女生更性感经典短发波波头发型，后面看上去真的很好看。仅仅是看后面，就给人甜美的感觉，看到前面以后岂不是心砰砰乱跳了？梳直的波波头发型，带来的是柔美的感觉，让人觉得十分的时尚。
+            	</p>
+            	<h6 style="line-height: 30px; color: #BBBBBB;">
+            		<span style="margin-right: 24px;">
+            			<i class="icon iconfont icon-good" style="font-size: 14px;"+></i> 1210</span>
+            		<span style="margin-right: 24px;">
+            			<i class="icon iconfont icon-comments" style="font-size: 14px;"></i> 233</span>	
+            		<span style="float: right;">
+            			<i class="icon iconfont icon-delete" style="font-size: 14px;"></i> 删除</span>	
+            	</h6>
+            	
+            </li>
+            </ul>
+		</div>
+    </div>
+</section>
+
+
+
+
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有作品哦！</p>
+	</section>
+</section>
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.icon-back').click(function(){
+            location.href= 'staff-zuopin.html';
+        });
+        </script>
+
+
+</body>
+</html>

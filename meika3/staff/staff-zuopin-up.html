@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的预约</title>
+    <script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+    </script>
+<link href="../css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="../icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="../js/zepto.min.js"></script>
+<script src="../js/frozen.js"></script>
+</head>
+    
+<body ontouchstart>
+<header class="ui-header ui-header-positive">
+	<button class="ui-btn ui-btn-s ui-btn-danger" data-href="staff-zuopin.html" style="top: 57%; left: 10px;">取消</button>
+	<h1>上传作品</h1>
+	<button class="ui-btn ui-btn-s ui-btn-primary" data-href="staff-zuopin-content.html" style="top: 57%;">确定</button>
+</header>
+
+
+<div class="ui-container ui-form p-top ui-border-t">
+	<form action="#">
+
+            
+	    <div class="ui-form-item ui-form-item-textarea ui-border-b">
+	    	 <i class="icon iconfont icon-edit"></i>
+	        <label>
+	            作品说明
+	        </label>
+	        <textarea placeholder="请输入您的作品说明" style="margin-top: 13px;height: 110px;"></textarea>
+	    </div>
+	    
+            <div class="ui-form-item ui-border-b">
+				<i class="icon iconfont icon-jifen"></i>
+                <label>作品价格</label>
+                <input type="text" placeholder="请输入您的作品参考价格" />
+                </a>
+           </div>
+	</form>
+</div>
+<style>
+	.ui-grid-trisect-img{padding-top: 100%;}
+</style>
+<ul class="ui-grid-trisect">
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background-image:url(../img/3.png)"></span>
+            <div class="ui-progress">
+                <span style="width:100%"></span>
+            </div>
+        </div>
+
+    </li>
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background-image:url(../img/2.png)"></span>
+            <div class="ui-progress">
+                <span style="width:100%"></span>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background-image:url(../img/2.png)"></span>
+            <div class="ui-progress">
+                <span style="width:100%"></span>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="ui-grid-trisect">
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background-image:url(../img/3.png)"></span>
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
+        </div>
+
+    </li>
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background-image:url(../img/2.png)"></span>
+        
+            <div class="ui-progress">
+                <span style="width:1%"></span>
+            </div>
+         </div>
+    </li>
+
+    <li>
+        <div class="ui-grid-trisect-img">
+            <span style="background:#FFFFFF; text-align: center;">
+            	<i class="iconfont icon-add" style="color: #ccc; font-size: 700%"></i>
+            </span>
+        </div>
+    </li>
+</ul>
+
+ <div class="ui-center" style="height: 30px;">亲，最多只能上传5张作品！</div>
+ 
+ 
+<!--无信息提示-->
+<section id="notice">
+	<section class="ui-notice">
+	    <i></i>
+	    <p>亲，暂时没有信息哦！</p>
+	    <!--<div class="ui-notice-btn">
+	        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+	    </div>-->
+	</section>
+</section>
+
+
+
+        <script>
+        $('header button').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+
+        </script>
+
+
+</body>
+</html>
