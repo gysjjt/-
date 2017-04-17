@@ -44,12 +44,12 @@
 			<ul class="ui-row">
             <li class="ui-col ui-col-20">
             	<div class="ui-avatar ui-border">
-				    <span style="background-image:url(img/head3.png)"></span>									    
+				    <span data-href="staff-index.html" style="background-image:url(img/head3.png)"></span>									    
 				</div>
 				<p class="ui-txt-muted" style="line-height: 30px; text-align: center; font-size: 12px;">11-12</p>
             </li>
             <li class="ui-col ui-col-80" style="padding-right: 12px;">
-            	<h4 style="padding-left: 0px;">谢小帅 </h4>				                	
+            	<h4 data-href="staff-index.html" style="padding-left: 0px;">谢小帅 </h4>				                	
 
             	<p class="ui-txt-justify" style="padding-top: 6px; padding-bottom: 6px;">
             		纹理烫短发发型，看着纹路清晰，给人一种凌乱的随意感觉。脖子那里的短发稍微有点弧度，减少了一些呆板的味道。这款小脸短发发型看着比较清爽且时尚，很多女性应该会喜欢的。短发发型后面的图片 烫发女生更性感经典短发波波头发型，后面看上去真的很好看。
@@ -67,12 +67,12 @@
 			<ul class="ui-row">
             <li class="ui-col ui-col-20">
             	<div class="ui-avatar ui-border">
-				    <span style="background-image:url(img/head2.png)"></span>									    
+				    <span data-href="staff-index.html" style="background-image:url(img/head2.png)"></span>									    
 				</div>
 				<p class="ui-txt-muted" style="line-height: 30px; text-align: center; font-size: 12px;">11-12</p>
             </li>
             <li class="ui-col ui-col-80" style="padding-right: 12px;">
-            	<h4 style="padding-left: 0px;">谢小帅</h4>				                	
+            	<h4 data-href="staff-index.html" style="padding-left: 0px;">谢小帅</h4>				                	
 
             	<p class="ui-txt-justify" style="padding-top: 6px; padding-bottom: 6px;">
             		纹理烫短发发型，看着纹路清晰，给人一种凌乱的随意感觉。脖子那里的短发稍微有点弧度，减少了一些呆板的味道。这款小脸短发发型看着比较清爽且时尚，很多女性应该会喜欢的。短发发型后面的图片 烫发女生更性感经典短发波波头发型，后面看上去真的很好看。
@@ -95,7 +95,7 @@
 
 
         <script>
-        $('.ui-list li,.ui-tiled li').click(function(){
+        $('.ui-list li,.ui-tiled li,.ui-col h4,.ui-avatar span').click(function(){
             if($(this).data('href')){
                 location.href= $(this).data('href');
             }
@@ -103,6 +103,8 @@
         $('.icon-back').click(function(){
             location.href= 'zuopin.html';
         });
+
+        
         </script>
 
 
