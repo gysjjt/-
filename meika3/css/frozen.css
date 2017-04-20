@@ -408,6 +408,8 @@ h6, .ui-txt-tips {
 .ui-grid-trisect-img, .ui-grid-halve-img {
   position: relative;
   width: 100%; }
+.ui-grid-trisect-img .icon-close{position:absolute;right:4px;top:4px;width:24px;height:24px;line-height:26px;border:1px solid #fff;color:#fff;text-align:center;border-radius:50%;z-index:2;}
+.ui-grid-trisect-img .layer{position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.8);z-index:2;}
   .ui-grid-trisect-img > span, .ui-grid-halve-img > span {
     width: 100%;
     height: 100%;
