@@ -2379,6 +2379,9 @@ padding-top: 60%;}
   color: #777;
   position: absolute;
   right: 15px; }
+
+
+
   @media (max-width: 320px) {
     .ui-panel-title-tips {
       right: 10px; } }
@@ -2916,6 +2919,7 @@ padding-top: 60%;}
 .mybox li{background: #fff; text-align: center; padding: 6% 0px;}
 .mybox li div{font-size: 12px; line-height: 32px;}
 .mybox li i{display: block; border-radius: 50%; width:46px; height:46px; margin: auto; text-align: center; line-height: 48px;font-size: 24px; color: #fff;}
+.ui-row-flex > li .icon-share{background-color:#64BD63;}
 .mybox>.ui-border-b{border-bottom: 1px solid #EEE !important;}
 .mybox>.ui-border-r{border-right: 1px solid #EEE !important;}
 
