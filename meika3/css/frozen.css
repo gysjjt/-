@@ -2897,6 +2897,9 @@ padding-top: 60%;}
 .index-main-right h1{padding-top: 7px;}
 .index-main-right i{float:left; margin:4px 6px 15px 15px;display: block; font-size: 35px;}
 .nav-logo{font-size: 38px !important;}
+.more-seclet{background-color:#fff;border-top:1px solid #DCDCDC;border-bottom:1px solid #DCDCDC;padding:6px 1%;}
+.more-seclet .icon-dian1{margin-right:6px;}
+.more-seclet .icon-moreunfold{float:right;} 
 
 
 /*左上角：图片上的返回箭头按钮*/
