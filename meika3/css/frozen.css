@@ -2900,6 +2900,9 @@ padding-top: 60%;}
 .more-seclet{background-color:#fff;border-top:1px solid #DCDCDC;border-bottom:1px solid #DCDCDC;padding:6px 1%;}
 .more-seclet .icon-dian1{margin-right:6px;}
 .more-seclet .icon-moreunfold{float:right;} 
+.sec-por{position:relative;}
+.sec-por .sec-list{display:none;position:absolute;top:100%;left:0;right:0;background-color:#fff;z-index:222;}
+.sec-por .sec-list > li{height:29px;line-height:28px;border-bottom:1px solid #DCDCDC;padding:0 1%;}
 
 
 /*左上角：图片上的返回箭头按钮*/
