@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>评价详情</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   		});
+   		
+    </script>
+<link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
+<link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<script src="js/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="ui-header ui-header-positive">
+    <i class="icon iconfont icon-back" onclick="history.back()"></i>
+    <h1>评价详情</h1>
+</header>
+
+<!--底部悬浮导航-->
+
+
+
+<section class="ui-container">
+    <div class="comment">
+		<div class="com-info">
+			<div class="date">2017-05-18</div>
+			<div class="info">
+				<div class="ui-row-flex">
+					<div class="ui-col ui-col-3">内容</div>
+					<div class="ui-col" >售价</div>
+				</div>
+				<div class="ui-row-flex">
+					<div class="ui-col ui-col-3">100[剪发套餐]</div>
+					<div class="ui-col" >90.0</div>
+				</div>
+				<div class="total">
+					<p>总计：<em class="red">90.0元</em></p>
+					<p>支付明细：会员卡90.0元</p>
+				</div>
+			</div>
+		</div>
+		<div class="com-det">
+			<dl class="com-dl">
+				<dt class="tit">我的评分：</dt>
+				<dd class="info"><em class="orange">中评</em></dd>
+			</dl>
+			<dl class="com-dl">
+				<dt class="tit">我的评论：</dt>
+				<dd class="info">
+					<p>还是一如既往的好，下次有活动我还是继续的还是一如既往的好，下次有活动我还是继续的还是一如既往的好，下次有活动我还是继续的</p>
+				</dd>
+			</dl>
+			<dl class="com-dl">
+				<dt class="tit">店家回复：</dt>
+				<dd class="info">
+					<div class="green">
+						<p>谢谢你的一再的支持，相信有你的支持，我们会做的更好</p>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+        <script>
+        $('.ui-list li,.ui-tiled li,.ui-col h4,.ui-avatar span').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.icon-back').click(function(){
+            location.href= 'zuopin.html';
+        });
+
+        
+        </script>
+
+
+</body>
+</html>

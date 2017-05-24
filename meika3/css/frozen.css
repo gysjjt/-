@@ -159,10 +159,25 @@ h6, .ui-txt-tips {
 .ui-txt-feeds {
   color: #314c83; }
 
+/**/
+.txr{text-align:right;}
+.txl{text-align:left;}
+.txc{text-align:center;}
+.f11{font-size:11px;}
+.f13{font-size:13px;}
+.garybbb{color:#bbb;}
+.ui-col .state{display:inline-block;height: 16px; line-height: 16px; font-size: 11px; padding: 2px 8px; background: #DDDDDD; color: #FFFFFF; border-radius: 4px;}
+.ui-col .det-a{display:inline-block;height: 20px; line-height: 20px; font-size: 11px; padding: 2px 8px; background: #FFA800; color: #FFFFFF; border-radius: 4px;}
+.ui-row-cont{padding:8px 0;border-bottom:1px solid #E0E0E0;margin:0 12px;font-size:13px;}
+.ui-bg-white > .ui-row-cont:last-child{border-bottom:0;}
+.ui-row-cont .det-tit{font-size:11px;color:#bbb;}
+.state.purple-a{background-color:#DE4D96;}
+.state .icon-bi{margin-right:4px;}
+
 /* 同em */
 .ui-txt-highlight {
   color: #ff8444; }
-
+.orange{color:#f60;}
 .ui-txt-justify {
   text-align: justify; }
 
@@ -2943,4 +2958,17 @@ padding-top: 60%;}
 .info-nav li.current {
     background-color: #F947B2;
     color: #FFFFFF;
-    border-bottom: 0px;
+    border-bottom: 0px;}
+
+/*评价详情*/
+.comment{padding:12px;}
+.comment .com-info{background-color:#fff;padding:0 10px;font-size:14px;}
+.comment .com-info .date{font-size:16px;font-family:Arial;color:#333;text-align:center;border-bottom:1px solid #DCDCDC;height:40px;line-height:40px;}
+.comment .com-info .ui-row-flex{height:36px;line-height:36px;border-bottom:1px solid #DCDCDC;}
+.comment .com-info .total{padding:6px 0;}
+.comment .com-det{margin-top:10px;background-color:#fff;padding:10px;}
+.com-dl{display:flex;font-size:14px;margin-bottom:6px;}
+.com-dl > .tit{width:70px;color:#333;}
+.com-dl > .info{flex:1}
+.green{color:#080;}
+/*评价详情end*/
