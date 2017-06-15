@@ -861,6 +861,7 @@ h6, .ui-txt-tips {
     display: block;
     overflow: hidden;
     background-repeat: no-repeat;
+	background-position:0 0;
     -webkit-background-size: cover;
     -webkit-border-radius: 200px; }
     
