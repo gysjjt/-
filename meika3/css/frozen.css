@@ -1438,7 +1438,7 @@ h6, .ui-txt-tips {
   position: relative;
   height: 31px;
   line-height: 30px;
-  display: -webkit-inline-box;
+  display: -webkit-box;
   -webkit-box-align: center;
   padding-right: 25px;
   font-size: 12px;
