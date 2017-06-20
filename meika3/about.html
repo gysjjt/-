@@ -13,6 +13,7 @@
     </script>
 <link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
 <link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<link href="css/swiper.min.css"  rel="stylesheet" media="screen"><!--基层样式-->
 <script src="js/zepto.min.js"></script>
 <script src="js/frozen.js"></script>
 </head>
@@ -34,35 +35,18 @@
 
 
 
-<section id="slider">
-            <div class="ui-slider ui-slider-h100">
-            	<i class="icon iconfont icon-back back-bg" onclick="history.back()"></i>
-                <ul class="ui-slider-content">
-                    <li><span style="background-image:url(img/1.png)"></span></li>
-                    <li><span style="background-image:url(img/2.png)"></span></li>
-                    <li><span style="background-image:url(img/3.png)"></span></li>
-                </ul>
-            </div>
-
-        <script>
-        (function (){
-            var slider = new fz.Scroll('.ui-slider', {
-                role: 'slider',
-                indicator: true,
-                autoplay: false,
-                interval: 4000
-            });
-
-            slider.on('beforeScrollStart', function(fromIndex, toIndex) {
-                console.log(fromIndex,toIndex)
-            });
-
-            slider.on('scrollEnd', function(cruPage) {
-                console.log(cruPage)
-            });
-        })();
-        </script>
-</section>
+					<section id="slider">
+						<div class="swiper-container" style="height:200px;">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><span class="img-c" style="background-image:url(img/1.png)"></span></li>
+								<li class="swiper-slide"><span class="img-c" style="background-image:url(img/2.png)"></span></li>
+								<li class="swiper-slide"><span class="img-c" style="background-image:url(img/3.png)"></span></li>
+							</ul>
+							<div class="swiper-pagination"></div>
+						</div>
+						
+						<i class="icon iconfont icon-back back-bg" onclick="history.back()"></i>
+					</section>
 
 <section class="ui-container">
 
@@ -87,8 +71,13 @@
               </div>
             </div>
 </section>
-
-
+<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
 
 
 
