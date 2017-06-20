@@ -13,6 +13,32 @@
     </script>
 <link href="css/frozen.css" rel="stylesheet" media="screen"><!--基层样式-->
 <link href="icon/iconfont.css" rel="stylesheet" media="screen"><!--图标样式-->
+<style>
+#shareit {
+  -webkit-user-select: none;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+#shareit img {
+  max-width: 100%;
+}
+.arrow {
+  position: absolute;
+  right:10%;
+  top: 5%;
+}
+#share-text {
+  margin-top: 400px;
+}
+</style>
+
 <script src="js/zepto.min.js"></script>
 <script src="js/frozen.js"></script>
 </head>
@@ -70,7 +96,7 @@
 </section>
 
 			    <ul class="ui-row-flex mybox ui-border-t">
-			        <li class="ui-col ui-border-b" data-href="yuhui.html"><i class="icon-share"></i><div>分享有奖</div></li>
+			        <li class="ui-col ui-border-b" id="share_btn"><i class="icon-share"></i><div>分享有奖</div></li>
 			    </ul>
 
 
@@ -90,6 +116,19 @@
         });
         </script>
 
-
+<div id="shareit">
+  <img class="arrow" src="img/share.png">
+</div>
+<script>
+  //立即分享到微信朋友圈点击事件
+  $("#share_btn").on("click", function() {
+      $("#shareit").show();
+  });
+   
+   
+  $("#shareit").on("click", function(){
+    $("#shareit").hide(); 
+  })
+</script>
 </body>
 </html>
